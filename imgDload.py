@@ -4,9 +4,9 @@ import pandas as pd
 import urllib.request as urllib2
 import os
 
-default_dir = "/Users/ashwin/Desktop/images/imgsnew"
+default_dir = ".../imgsnew"
 
-df = pd.read_csv(r'/Users/ashwin/Desktop/images/picsnew.csv')
+df = pd.read_csv(r'.../picsnew.csv')
 os.chdir(default_dir)
 
 titles = df['titles']
@@ -20,7 +20,7 @@ options.add_experimental_option("prefs", {
   "safebrowsing.enabled": True
 })
 
-driver = webdriver.Chrome("/Users/ashwin/Downloads/chromedriver", options=options)
+driver = webdriver.Chrome(".../chromedriver", options=options)
 
 for idx, event in enumerate(links):
     driver.get(event)
