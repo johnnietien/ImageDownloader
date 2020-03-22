@@ -26,7 +26,8 @@ options.add_experimental_option("prefs", {
   "safebrowsing.enabled": True
 })
 
-driver = webdriver.Chrome("D:\Admin\Projects2020\ImageDownloader\chromedriver_win32\chromedriver.exe", options=options)
+#driver = webdriver.Chrome("D:\Admin\Projects2020\ImageDownloader\chromedriver_win32\chromedriver.exe", options=options)
+driver = webdriver.Chrome("/usr/bin/chromedriver", options=options)
 #driver.maximize_window()
 driver.implicitly_wait(10) # seconds
 
