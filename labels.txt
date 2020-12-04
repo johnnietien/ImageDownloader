@@ -1,0 +1,2 @@
+0 Ok Panel
+1 Defect Panel
